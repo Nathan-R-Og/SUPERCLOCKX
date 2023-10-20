@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+hostTimeScale = 1.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 53.0
+margin_top = 152.0
+margin_right = 93.0
+margin_bottom = 166.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="year" type="Label" parent="."]
+margin_left = 393.0
+margin_top = 189.0
+margin_right = 433.0
+margin_bottom = 263.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
