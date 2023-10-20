@@ -39,14 +39,14 @@ var totals = false
 func _ready():
 	var iterateSort = 0
 	while iterateSort < $Control.get_child_count():
-		$Control.get_child(iterateSort).rect_position = Vector2(32,32 + (32*iterateSort))
+		$Control.get_child(iterateSort).position = Vector2(32,32 + (32*iterateSort))
 		iterateSort += 1
 
 func _process(delta):
 
 	
 	if emulated == false:
-		time = OS.get_datetime()
+		time = Time.get_datetime_dict_from_system()
 		if time["year"] % 4 == 0:
 			leapYear = true
 		else:
